@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>show images</title>
+  </head>
+  <body>
+    [<a href=/>home</a>] [<a href=# onClick="location.reload();">reload</a>]
+    <div class="content">
+        <div>
+          <h3>Here are the media files inside the S3 bucket:</h3>
+          <ul>
+            {% for item in contents %}
+              <li>
+                <!-- <p>{{ item }}</p>
+                <a href="/{{ item.Key }}"> {{ item.Key }} </a> -->
+                <img src={{ item }} style="width: 250px">
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+    </div>
+  </body>
+</html>
