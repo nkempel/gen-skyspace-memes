@@ -6,14 +6,12 @@ from s3_functions import list_files, upload_file, show_image
 import boto3
 import urllib.request
 
-instanceid = urllib.request.urlopen('http://169.254.169.254/latest/meta-data/instance-id').read().decode()
-
 app = Flask(__name__)
 
 LAST_MEME_GEN = ""
 BUCKET = os.environ.get('BUCKET_NAME')
 TOPIC_ARN = os.environ.get('TOPIC_ARN')
-AWS_REGION = "us-east-1"
+AWS_REGION = urllib.request.urlopen('http://169.254.169.254/latest/meta-data/placement/region').read().decode()
 
 def fetch_meme_string():
     headers = {
