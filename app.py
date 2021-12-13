@@ -16,7 +16,7 @@ AWS_REGION = urllib.request.urlopen('http://169.254.169.254/latest/meta-data/pla
 def fetch_meme_string():
     headers = {
         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        'cookie': 'iflipsess=9e78gc9ghkcicd6385p31uug6e; __utma=71379083.1923845604.1639414590.1639414590.1639414590.1; __utmb=71379083.10.9.1639417578369; __utmc=71379083; __utmz=71379083.1639414590.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); G_ENABLED_IDPS=google; G_AUTHUSER_H=0; rootkey=ug_y0XWOLI4burcNaRwUi4YZkg7gCsyC; rootemail=kempel.nathanael%40gmail.com; __utmt=1; _ga=GA1.2.1923845604.1639414590; _gid=GA1.2.1551630543.1639417582; _fbp=fb.1.1639417582654.712570802; __gads=ID=443bf9a167c7cfbd-22bba802e2cc0043:T=1639417583:RT=1639417583:S=ALNI_MYN8scxWhxI8yx2cc-qk1IetuAH8g',
+        'cookie': '__utmc=71379083; iflipsess=palvmg7qnnf2uoie0vt8hed0kj; __utma=71379083.734663800.1635440230.1636492023.1636653592.7; __utmz=71379083.1636653592.7.6.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __utmt=1; __utmb=71379083.2.9.1636653592',
     }
 
     post_request = 'use_openai=0&meme_id=14371066&init_text=&__tok=rrFXqiETbBPFmKTLqtQccvUmyIgcafR++8QMHTImB8k=&__cookie_enabled=1'
