@@ -19,7 +19,7 @@ def fetch_meme_string():
         'cookie': '__utmc=71379083; iflipsess=u2h951epfj9p581vvsh280hv89; __utma=71379083.734663800.1635440230.1636492023.1636653592.7; __utmz=71379083.1636653592.7.6.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __utmt=1; __utmb=71379083.2.9.1636653592',
     }
 
-    post_request = 'use_openai=0&meme_id=61532&init_text=&__tok=xM+jjPxW/3HO7uUbVp6xUqmNfXy17WhJJQRZgHUHjFA=&__cookie_enabled=1'
+    post_request = 'use_openai=0&meme_id=61520&init_text=&__tok=XEnWK0Pkd65mdCUZPQoUXNAnUOokKOmBvuxjiHEK+0U=&__cookie_enabled=1'
     response = requests.post(
         "https://imgflip.com/ajax_ai_meme",
         data=post_request,
