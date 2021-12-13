@@ -16,7 +16,7 @@ AWS_REGION = urllib.request.urlopen('http://169.254.169.254/latest/meta-data/pla
 def fetch_meme_string():
     headers = {
         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        'cookie': '__utmc=71379083; iflipsess=9e78gc9ghkcicd6385p31uug6e; __utma=71379083.1923845604.1639414590.1639414590.1639414590.1; __utmz=71379083.1639414590.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1; __utmb=71379083.10.9.1639417578369; G_AUTHUSER_H=0; G_ENABLED_IDPS=google; rootemail=kempel.nathanael@gmail.com; rootkey=ug_y0XWOLI4burcNaRwUi4YZkg7gCsyC',
+        'cookie': '__utmc=71379083; iflipsess=9e78gc9ghkcicd6385p31uug6e; __utma=71379083.1923845604.1639414590.1639414590.1639414590.1; __utmz=71379083.1639414590.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utmt=1; __utmb=71379083.10.9.1639417578369',
     }
 
     post_request = 'use_openai=0&meme_id=14371066&init_text=&__tok=rrFXqiETbBPFmKTLqtQccvUmyIgcafR++8QMHTImB8k=&__cookie_enabled=1'
